@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/game_activity"
+	android:background="@drawable/background_texture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+    tools:context=".GameActivity" >
+
+    <LinearLayout
+        android:id="@+id/row1"
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_gravity="center"
+		android:orientation="horizontal" >
+        <Button
+            android:id="@+id/game_menu_back"
+            android:contentDescription="@string/menu"
+            android:background="@drawable/small_button_p"
+            android:text="@string/menu"
+	        android:textStyle="bold"
+			android:textSize="20sp"
+			android:layout_width="75dp"
+			android:layout_height="50dp" />
+		<RelativeLayout 
+	    	android:layout_gravity="center"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+		    <ImageView
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:alpha="0"
+			    android:id="@+id/flash_success"
+			    android:contentDescription="@+id/flash_success"
+			    android:src="@drawable/flash_success"
+			    android:adjustViewBounds="true" />
+		    <ImageView
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:alpha="0"
+			    android:id="@+id/flash_failure"
+			    android:contentDescription="@+id/flash_failure"
+			    android:src="@drawable/flash_failure"
+			    android:adjustViewBounds="true" />
+		</RelativeLayout>
+        <Button
+            android:id="@+id/game_skip"
+            android:contentDescription="@string/skip"
+            android:background="@drawable/small_button_p"
+            android:text="@string/skip"
+	        android:textStyle="bold"
+			android:textSize="20sp"
+			android:layout_width="75dp"
+			android:layout_height="50dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/row2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+	    <TextView
+			android:id="@+id/slate_question"
+			android:background="@drawable/slate_question"
+		    android:layout_centerHorizontal="true"
+			android:layout_width="300dp"
+			android:layout_height="300dp"
+			android:layout_marginLeft="5dp"
+		    android:textSize="50sp"
+		    android:textStyle="bold"
+		    android:textColor="@color/BLACK"
+		    android:gravity="right" />
+		<LinearLayout
+		    android:id="@+id/answers"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/slate_question"
+		    android:layout_marginBottom="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:gravity="center"
+		    android:orientation="horizontal" >
+
+			<Button 
+			    android:id="@+id/answer1"
+		    	android:contentDescription="@+id/answer1"
+		    	android:background="@drawable/answer_button"
+		    	android:layout_width="75dp"
+		    	android:layout_height="75dp"
+		    	android:layout_margin="1dp"
+		    	style="?android:attr/borderlessButtonStyle"
+		    	android:textSize="20sp"
+		    	android:textStyle="bold" />
+			<Button 
+			    android:id="@+id/answer2"
+		    	android:contentDescription="@+id/answer2"
+		    	android:background="@drawable/answer_button"
+		    	android:layout_width="75dp"
+		    	android:layout_height="75dp"
+		    	android:layout_margin="1dp"
+		    	style="?android:attr/borderlessButtonStyle"
+		    	android:textSize="20sp"
+		    	android:textStyle="bold" />
+			<Button 
+			    android:id="@+id/answer3"
+		    	android:contentDescription="@+id/answer3"
+		    	android:background="@drawable/answer_button"
+		    	android:layout_width="75dp"
+		    	android:layout_height="75dp"
+		    	android:layout_margin="1dp"
+		    	style="?android:attr/borderlessButtonStyle"
+		    	android:textSize="20sp"
+		    	android:textStyle="bold" />
+			<Button 
+			    android:id="@+id/answer4"
+		    	android:contentDescription="@+id/answer4"
+		    	android:background="@drawable/answer_button"
+		    	android:layout_width="75dp"
+		    	android:layout_height="75dp"
+		    	android:layout_margin="1dp"
+		    	style="?android:attr/borderlessButtonStyle"
+		    	android:textSize="20sp"
+		    	android:textStyle="bold" />
+		</LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

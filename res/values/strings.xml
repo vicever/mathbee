@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">巧计算</string>
+    <string name="action_settings">配置</string>
+    <string name="hello_world">Hello world!</string>
+
+    <color name="reddish_background">#FF3700</color>
+    <color name="BLACK">#000000</color>
+
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_summary">SummaryActivity</string>
+    
+    <string name="btnEasy">简单</string>
+    <string name="btnMedium">有点难</string>
+    <string name="btnExpert">很难</string>
+    <string name="btn10">10</string>
+    <string name="btn20">20</string>
+    <string name="btn40">40</string>
+    <string name="btnA">\u002B</string>
+    <string name="btnS">\u2212</string>
+    <string name="btnM">\u00D7</string>
+    <string name="btnD">\u00F7</string>
+
+    
+    
+    <string name="summary">汇总</string>
+    <string name="diff">难度:\t</string>
+    <string name="correct">正确:\t</string>
+    <string name="wrong">错误:\t</string>
+    <string name="skipped">跳过:\t</string>
+    <string name="duration">用时(秒):\t</string>
+    <string name="score">总分:\t</string>
+    
+    <string name="highscores">最高分</string>
+    <string name="menu">菜单</string>
+    <string name="skip">略过</string>
+    <string name="play">开始考试</string>
+    
+    
+    <string name="set">题目数</string>
+    <string name="difficulty">难度</string>
+    <string name="operations">运算</string>
+</resources>

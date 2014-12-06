@@ -1,0 +1,250 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/menu_activity"
+                android:background="@drawable/background_texture"
+                tools:context=".MenuActivity">
+
+    <ImageView
+            android:id="@+id/mathbeeTitle"
+            android:contentDescription="@drawable/mathbee_title"
+            android:src="@drawable/mathbee_title"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/mathbeeTitle">
+
+        <LinearLayout
+                android:id="@+id/difficultyButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/difficulty"
+                    android:textColor="@color/BLACK"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            <ToggleButton
+                    android:id="@+id/btnEasy"
+                    android:contentDescription="@string/btnEasy"
+                    android:background="@drawable/large_button"
+                    android:checked="true"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textOn="@string/btnEasy"
+                    android:textOff="@string/btnEasy"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"/>
+
+            <ToggleButton
+                    android:id="@+id/btnMedium"
+                    android:contentDescription="@string/btnMedium"
+                    android:background="@drawable/large_button"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textOn="@string/btnMedium"
+                    android:textOff="@string/btnMedium"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"/>
+
+            <ToggleButton
+                    android:id="@+id/btnExpert"
+                    android:contentDescription="@string/btnExpert"
+                    android:background="@drawable/large_button"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textOn="@string/btnExpert"
+                    android:textOff="@string/btnExpert"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/setButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/difficultyButtons"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/set"
+                    android:textColor="@color/BLACK"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+            <ToggleButton
+                    android:id="@+id/btn10"
+                    android:contentDescription="@string/btn10"
+                    android:background="@drawable/small_button"
+                    android:checked="true"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textOn="@string/btn10"
+                    android:textOff="@string/btn10"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"/>
+
+            <ToggleButton
+                    android:id="@+id/btn20"
+                    android:contentDescription="@string/btn20"
+                    android:background="@drawable/small_button"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textOn="@string/btn20"
+                    android:textOff="@string/btn20"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"/>
+
+            <ToggleButton
+                    android:id="@+id/btn40"
+                    android:contentDescription="@string/btn40"
+                    android:background="@drawable/small_button"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textOn="@string/btn40"
+                    android:textOff="@string/btn40"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/row1">
+
+        <LinearLayout
+                android:id="@+id/operatorSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/operations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/operations"
+                    android:textColor="@color/BLACK"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+            <GridLayout
+                    android:id="@+id/operationButtons"
+                    android:columnCount="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ToggleButton
+                        android:id="@+id/btnA"
+                        android:contentDescription="@string/btnA"
+                        android:checked="true"
+                        android:background="@drawable/mini_button"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textOn="@string/btnA"
+                        android:textOff="@string/btnA"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_row="0"
+                        android:layout_column="0"/>
+
+                <ToggleButton
+                        android:id="@+id/btnS"
+                        android:contentDescription="@string/btnS"
+                        android:checked="true"
+                        android:background="@drawable/mini_button"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textOn="@string/btnS"
+                        android:textOff="@string/btnS"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_row="0"
+                        android:layout_column="1"/>
+
+                <ToggleButton
+                        android:id="@+id/btnM"
+                        android:contentDescription="@string/btnM"
+                        android:background="@drawable/mini_button"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textOn="@string/btnM"
+                        android:textOff="@string/btnM"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_row="1"
+                        android:layout_column="0"/>
+
+
+                <ToggleButton
+                        android:id="@+id/btnD"
+                        android:contentDescription="@string/btnD"
+                        android:background="@drawable/mini_button"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textOn="@string/btnD"
+                        android:textOff="@string/btnD"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_row="1"
+                        android:layout_column="1"/>
+            </GridLayout>
+        </LinearLayout>
+
+        <Button
+                android:visibility="visible"
+                android:id="@+id/start_button"
+                android:contentDescription="@string/play"
+                android:background="@drawable/square_button"
+                android:text="@string/play"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignBottom="@id/operatorSet"
+                android:layout_toRightOf="@id/operatorSet"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

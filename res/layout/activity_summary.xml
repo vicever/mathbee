@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/background_texture"
+	android:orientation="vertical"
+	android:gravity="center"
+    tools:context=".SummaryActivity" >
+	<ImageView
+   	    android:id="@+id/mathbeeTitle"
+   	    android:contentDescription="@drawable/mathbee_title"
+   	    android:src="@drawable/mathbee_title"
+   	    android:layout_width="300dp"
+   	    android:layout_height="80dp"
+   	    android:layout_marginLeft="5dp" />
+    
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/BLACK"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="@string/summary" />
+	<LinearLayout 
+	    android:id="@+id/summaries"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="15dp"
+	    android:orientation="vertical" >
+		<TextView
+		    android:id="@+id/summary1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/BLACK"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:text="@string/diff" />
+		<TextView
+		    android:id="@+id/summary2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/BLACK"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:text="@string/correct" />
+		<TextView
+		    android:id="@+id/summary3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/BLACK"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:text="@string/wrong" />		
+	    <TextView
+		    android:id="@+id/summary4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/BLACK"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:text="@string/skipped" />
+		<TextView
+		    android:id="@+id/summary5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/BLACK"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:text="@string/duration" />
+		<TextView
+		    android:id="@+id/summary6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/BLACK"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:text="@string/score" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+	    <Button
+		    android:id="@+id/btnMenu"
+		    android:contentDescription="@+id/game_menu"
+            android:text="@string/menu"
+	        android:textStyle="bold"
+			android:textSize="25sp"
+		    android:background="@drawable/small_button_p"
+		    style="?android:attr/buttonBarButtonStyle"
+		    android:layout_width="120dp"
+		    android:layout_height="70dp"
+		    android:layout_marginRight="10dp" />
+	    <Button
+		    android:id="@+id/btnHighScores"
+		    android:contentDescription="@+id/game_menu"
+		    android:background="@drawable/small_button_p"
+		    style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/highscores"
+	        android:textStyle="bold"
+			android:textSize="23sp"
+		    android:layout_width="170dp"
+		    android:layout_height="70dp" />
+	</LinearLayout>
+	
+</LinearLayout>
